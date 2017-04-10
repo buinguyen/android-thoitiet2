@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TTVN2</string>
+    <string name="my_key">cJXnmFINfmcmvH4TFwVuMvhicA425wKM</string>
+
+    <string name="txt_label">Dự báo chung</string>
+    <string name="degree_celsius">\u2103</string>
+    <string name="pretext_min_temp">Nhiệt độ thấp nhất:\u0020</string>
+    <string name="pretext_max_temp">Nhiệt độ cao nhất:\u0020</string>
+</resources>

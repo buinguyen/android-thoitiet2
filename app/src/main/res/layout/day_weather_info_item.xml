@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/background_item"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_normal"/>
+
+    <TextView
+        android:id="@+id/tv_min_temp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_title"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textsize_normal"/>
+
+    <TextView
+        android:id="@+id/tv_max_temp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_min_temp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textsize_normal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_max_temp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/ll_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_day_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="Ban ngày"
+                android:textAlignment="center"
+                android:textSize="@dimen/textsize_normal"/>
+
+            <TextView
+                android:id="@+id/tv_day_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_day_title"
+                android:textAlignment="center"
+                android:textSize="@dimen/textsize_normal"/>
+
+            <ImageView
+                android:id="@+id/iv_day_content"
+                android:layout_width="75dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_day_content"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_night"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_night_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="Ban đêm"
+                android:textAlignment="center"
+                android:textSize="@dimen/textsize_normal"/>
+
+            <TextView
+                android:id="@+id/tv_night_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_night_title"
+                android:textAlignment="center"
+                android:textSize="@dimen/textsize_normal"/>
+
+            <ImageView
+                android:id="@+id/iv_night_content"
+                android:layout_width="75dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_night_content"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
